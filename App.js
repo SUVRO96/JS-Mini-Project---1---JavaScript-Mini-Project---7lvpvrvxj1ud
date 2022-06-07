@@ -55,8 +55,10 @@ function declareWinner() {
   let score2 = parseInt(yourScore.innerText);
   if (score1 > score2) {
     winnerDclr.innerHTML = "<h3>Computer Wins!</h3>";
+    winnerDclr.style.color = "red";
   } else if (score1 < score2) {
     winnerDclr.innerHTML = "<h3>You Win!</h3>";
+    winnerDclr.style.color = "Green";
   } else if (score1 == score2) {
     winnerDclr.innerHTML = "<h3>Draw!</h3>";
   }
