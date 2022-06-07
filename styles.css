@@ -16,8 +16,8 @@ body {
   border: none;
   /* outline: none; */
   cursor: pointer;
-  font-size: 5rem;
-  transition: 100ms;
+  /* font-size: 5rem;
+  transition: 100ms; */
 }
 
 .selection:hover {
@@ -30,6 +30,8 @@ body {
   justify-items: center;
   align-items: center;
   margin: 1rem;
+  max-height: 50vh;
+  overflow-y: auto;
 }
 
 .result-score {
@@ -46,4 +48,36 @@ body {
 .result-selection.winner {
   opacity: 1;
   font-size: 3rem;
+}
+
+.hand {
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+.modal-content {
+  border-radius: 8px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+.header {
+  background-color: #333;
+  color: white;
 }

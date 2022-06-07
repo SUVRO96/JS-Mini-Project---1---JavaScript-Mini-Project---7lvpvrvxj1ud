@@ -8,11 +8,31 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Stone-Paper-Scissors</h1>
+    <h1>Rock-Paper-Scissors</h1>
     <div class="selections">
-      <button class="selection" data-selection="rock">✊</button>
-      <button class="selection" data-selection="paper">🤚</button>
-      <button class="selection" data-selection="scissors">✌️</button>
+      <button class="selection" data-selection="rock">
+        <img class="hand" src="./images/rock.png" />
+      </button>
+      <button class="selection" data-selection="paper">
+        <img class="hand" src="./images/paper.png" />
+      </button>
+      <button class="selection" data-selection="scissors">
+        <img class="hand" src="./images/scissors.png" />
+      </button>
+    </div>
+    <div>
+      <b>Chances remaining:</b>
+      <p id="chnaces"></p>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="header">
+          <h1>Game Over!</h1>
+        </div>
+        <p id="winning"></p>
+        <button id="reset">Paly Again</button>
+      </div>
     </div>
     <div class="results">
       <div style="font-size: 1.5rem">
