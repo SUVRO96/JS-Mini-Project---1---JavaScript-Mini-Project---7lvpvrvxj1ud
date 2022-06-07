@@ -7,7 +7,7 @@ body {
 
 .selections {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 30vh;
 }
 
