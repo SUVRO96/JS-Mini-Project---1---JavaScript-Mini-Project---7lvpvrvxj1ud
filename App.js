@@ -7,6 +7,7 @@ const modal = document.getElementById("myModal");
 const winnerDclr = document.getElementById("winning");
 const resetBtn = document.getElementById("reset");
 let count = 10;
+chances.innerHTML = count;
 
 const SELECTION = [
   {
@@ -33,6 +34,7 @@ selectionButtons.forEach(buttons => {
       selection => selection.name === selectionName
     );
     count--;
+    chances.innerHTML = count;
     makeSelection(selection);
   });
 });
@@ -91,6 +93,7 @@ function randomSelection() {
 resetBtn.addEventListener("click", () => {
   modal.style.display = "none";
   count = 10;
+  chances.innerHTML = count;
   computerScore.innerText = "0";
   yourScore.innerText = "0";
   const resultEle = document.querySelectorAll(".result-selection");

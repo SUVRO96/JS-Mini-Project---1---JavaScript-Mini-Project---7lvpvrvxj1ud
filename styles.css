@@ -105,3 +105,8 @@ body {
   margin: 10px;
   padding: 5px;
 }
+
+#chances {
+  font-size: large;
+  font-weight: 300;
+}
